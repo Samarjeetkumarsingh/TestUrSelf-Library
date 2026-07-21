@@ -166,5 +166,5 @@
    .premium-chip b { font-size: 14px; }
    .premium-chip small { font-size: 8px; }
    .p-chip-1 { left: -20px; top: 120px; }
-   .p-chip-2 { right: -5px; bottom: 150px; }
+   .p-chip-2 { right: -5px; top: 150px; }
 }
