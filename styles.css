@@ -35,10 +35,19 @@
 
 /* Trust & Venture Section (Moved to Bottom) */
 .trust-venture { padding-top: 100px; padding-bottom: 100px; }
-.trust-container { background: linear-gradient(135deg, var(--ink), #0a3885); border-radius: 24px; padding: 0; display: grid; grid-template-columns: 0.8fr 1.2fr; overflow: hidden; box-shadow: 0 25px 50px rgba(8,39,93,0.15); align-items: center; color: #fff; }
-.trust-visual { height: 100%; position: relative; background: #061e47; display: flex; align-items: flex-end; justify-content: center; padding-top: 50px; }
-.trust-image-wrapper { position: relative; width: 85%; max-width: 350px; display: flex; justify-content: center;}
-.trust-image-wrapper img { width: 100%; height: auto; max-height: 400px; object-fit: cover; object-position: top; display: block; filter: drop-shadow(0 -10px 20px rgba(0,0,0,0.2)); border-radius: 12px 12px 0 0; }
+
+/* 1. MAIN BACKGROUND COLOR (Behind text) - Currently set to Dark Charcoal/Black */
+.trust-container { background: linear-gradient(135deg, #1a1a24, #0f0f15); border-radius: 24px; padding: 0; display: grid; grid-template-columns: 0.8fr 1.2fr; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.2); align-items: center; color: #fff; }
+
+/* 2. PHOTO BACKGROUND COLOR (Behind photo) - Currently set to a complementary Charcoal */
+.trust-visual { height: 100%; position: relative; background: #232332; display: flex; align-items: flex-end; justify-content: center; padding-top: 50px; }
+
+/* 3. PHOTO SIZE (Increased width) */
+.trust-image-wrapper { position: relative; width: 100%; max-width: 480px; display: flex; justify-content: center;}
+
+/* 4. PHOTO HEIGHT (Increased height) */
+.trust-image-wrapper img { width: 100%; height: auto; max-height: 550px; object-fit: cover; object-position: top; display: block; filter: drop-shadow(0 -10px 20px rgba(0,0,0,0.2)); border-radius: 12px 12px 0 0; }
+
 .trust-badge { position: absolute; top: 20px; right: -20px; background: var(--yellow); color: var(--ink); width: 85px; height: 85px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transform: rotate(12deg); }
 .trust-badge span { font: 800 24px Outfit; line-height: 1; margin-bottom: 2px;}
 .trust-badge small { font: 700 9px Outfit; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; line-height: 1.1; }
@@ -50,8 +59,10 @@
 .t-stat b { display: block; font: 800 28px Outfit; color: var(--yellow); }
 .t-stat span { font-size: 12px; color: #a4c7ff; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
 .trust-features { list-style: none; padding: 0; margin: 0 0 35px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 14px; color: #d0dfff; }
-@media(max-width: 950px) { .trust-container { grid-template-columns: 1fr; } .trust-visual { padding-top: 40px; } .trust-image-wrapper { width: 60%; } .trust-badge { right: 0; } .trust-content { padding: 40px 30px; } }
-@media(max-width: 560px) { .trust-content h2 { font-size: 34px; } .trust-stats { flex-direction: column; gap: 15px; } .trust-features { grid-template-columns: 1fr; } }
+
+/* Responsive adjustments for mobile so the larger image still looks good */
+@media(max-width: 950px) { .trust-container { grid-template-columns: 1fr; } .trust-visual { padding-top: 40px; } .trust-image-wrapper { width: 70%; max-width: 400px; } .trust-badge { right: 0; } .trust-content { padding: 40px 30px; } }
+@media(max-width: 560px) { .trust-content h2 { font-size: 34px; } .trust-stats { flex-direction: column; gap: 15px; } .trust-features { grid-template-columns: 1fr; } .trust-image-wrapper { width: 90%; max-width: 350px;} }
 
 /* Fixed Poster Button */
 .poster-section{background:#e9edf3;padding:95px max(30px,calc((100vw - 1180px)/2));overflow:hidden; position:relative;}
